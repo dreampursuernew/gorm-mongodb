@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         mavenLocal()
+        maven { url "https://maven.aliyun.com/repository/public/" }
         maven { url "https://repo.grails.org/grails/core" }
     }
     dependencies {
@@ -34,6 +35,7 @@ ext {
 subprojects { project ->
     repositories {
         mavenLocal()
+        maven { url "https://maven.aliyun.com/repository/public/" }
         maven { url "https://repo.grails.org/grails/core" }
     }
     if(project.name.startsWith("examples")) {
